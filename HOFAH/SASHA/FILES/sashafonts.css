@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "sasha";
+  src:
+    url("./FONTS/Jabin/Jabin-Regular.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sasha";
+  src:
+    url("./FONTS/Jabin/Jabin-Light.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-Light.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "sasha";
+  src:
+    url("./FONTS/Jabin/Jabin-Medium.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "sasha";
+  src:
+    url("./FONTS/Jabin/Jabin-Bold.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "sasha swash1";
+  src:
+    url("./FONTS/Jabin/Jabin-RegularSwash1.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-RegularSwash1.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sasha swash1";
+  src:
+    url("./FONTS/Jabin/Jabin-LightSwash1.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-LightSwash1.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "sasha swash1";
+  src:
+    url("./FONTS/Jabin/Jabin-MediumSwash1.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-MediumSwash1.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "sasha swash1";
+  src:
+    url("./FONTS/Jabin/Jabin-BoldSwash1.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-BoldSwash1.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "sasha swash2";
+  src:
+    url("./FONTS/Jabin/Jabin-RegularSwash2.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-RegularSwash2.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sasha swash2";
+  src:
+    url("./FONTS/Jabin/Jabin-LightSwash2.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-LightSwash2.woff") format("woff");
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "sasha swash2";
+  src:
+    url("./FONTS/Jabin/Jabin-MediumSwash2.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-MediumSwash2.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "sasha swash2";
+  src:
+    url("./FONTS/Jabin/Jabin-BoldSwash2.woff2") format("woff2"),
+    url("./FONTS/Jabin/Jabin-BoldSwash2.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
+}

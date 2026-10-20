@@ -1,0 +1,148 @@
+#sashasig {
+  width: calc(320px - (7px * 2));
+  height: calc(180px - (7px * 2));
+  margin: 0 auto;
+  outline: var(--tborder);
+  outline-offset: 1px;
+  box-sizing: border-box;
+  border: 14px solid transparent;
+  border-top-width: 7px;
+  border-bottom-width: 7px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  &:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + (7px * 2));
+    height: calc(100% + (16px * 2));
+    border: var(--tborder);
+    z-index: 1;
+  }
+  & * {
+    box-sizing: border-box;
+    transition: 1s;
+  }
+  & br {
+    display: none !important;
+  }
+  & .flex {
+    justify-content: center;
+    align-items: center;
+  }
+  & > div {
+    width: 100%;
+    height: 100%;
+    border: var(--tborder);
+    position: relative;
+    overflow: hidden;
+    & .sashasigimg {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      filter: none;
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        z-index: -3;
+      }
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: 1s;
+      }
+      &:before {
+        background: #666;
+        z-index: -1;
+        mix-blend-mode: multiply;
+      }
+      &:after {
+        background: #111;
+        z-index: -1;
+        mix-blend-mode: color;
+      }
+    }
+    & .sashasigtxt {
+      position: absolute;
+      padding: 40px;
+      text-align: justify;
+      text-align-last: center;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      opacity: 0;
+      & > i {
+        font: 800 2.5rem "sasha";
+        line-height: normal;
+        line-height: 100%;
+        text-transform: lowercase;
+        letter-spacing: 2px;
+        color: var(--group);
+        &:first-of-type {
+          margin-bottom: 5px;
+        }
+      }
+      & > b {
+        position: absolute;
+        font: 800 270px "sasha swash2";
+        z-index: -1;
+        line-height: 80%;
+        color: transparent !important;
+        text-shadow: 2px 2px 0px var(--group-25);
+        -webkit-text-stroke: 1px #ffffff12;
+        margin-bottom: 17px;
+        opacity: 0.5;
+      }
+      & > div {
+        text-transform: lowercase;
+        font: normal 0.9rem "Crimson Text";
+        line-height: 120%;
+        color: var(--txt3);
+        & i {
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: var(--txt1);
+        }
+        & strong {
+          color: var(--group);
+          font-weight: 800;
+        }
+        & u, & strike {
+          text-decoration-thickness: 1px;
+        }
+        & u {
+          font-weight: 700;
+          color: var(--txt2);
+        }
+        & strike {
+          color: var(--txt4);
+        }
+      }
+    }
+  }
+  &:hover {
+    & .sashasigimg {
+      & > img {
+        filter: contrast(.80) blur(1px) brightness(0.8);
+        transform: scale(1.5) rotate(7deg);
+      }
+      &:before,
+      &:after {
+        opacity: 1;
+      }
+    }
+    & .sashasigtxt {
+      opacity: 1;
+    }
+  }
+}
