@@ -37,7 +37,7 @@
     letter-spacing: 0.8px;
     height: calc(100%);
     line-height: 100%;
-    color: var(--txt4);
+    color: var(--group);
     position: absolute;
     transition-delay: 0.6s;
     mix-blend-mode: difference;
