@@ -12,7 +12,7 @@
   font-family: "sasha";
   src:
     url("../FONTS/Jabin/Jabin-Light.woff2") format("woff2"),
-    url("./FONTS/Jabin/Jabin-Light.woff") format("woff");
+    url("../FONTS/Jabin/Jabin-Light.woff") format("woff");
   font-style: normal;
   font-weight: 200;
 }
