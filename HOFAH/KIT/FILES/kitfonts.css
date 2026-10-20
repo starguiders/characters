@@ -1,17 +1,20 @@
 @font-face {
-font-family: "kit";
-src: url("../FONTS/SUCTENSS/Suctenss.woff2") format("woff2"),
+  font-family: "kit";
+  src:
+    url("../FONTS/SUCTENSS/Suctenss.woff2") format("woff2"),
     url("../FONTS/SUCTENSS/Suctenss.woff2/") format("woff");
-font-style: normal;
-font-weight: normal;
-font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
-font-family: "kit deco";
-src: url("../FONTS/SLIM WANDALS/SlimWandalsElement_PERSONAL.woff2") format("woff2"),
+  font-family: "kit deco";
+  src:
+    url("../FONTS/SLIM WANDALS/SlimWandalsElement_PERSONAL.woff2")
+      format("woff2"),
     url("../FONTS/SLIM WANDALS/SlimWandalsElement_PERSONAL.woff") format("woff");
-font-style: normal;
-font-weight: normal;
-font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
 }
