@@ -98,7 +98,7 @@
         z-index: -1;
         line-height: 80%;
         color: transparent !important;
-        text-shadow: 2px 2px 0px var(--group-25);
+        text-shadow: 2px 2px 0px rgb(from var(--group) r g b / 0.25);
         -webkit-text-stroke: 1px #ffffff12;
         margin-bottom: 17px;
         opacity: 0.5;
