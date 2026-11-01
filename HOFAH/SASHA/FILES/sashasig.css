@@ -20,31 +20,31 @@
     border: var(--tborder);
     z-index: 1;
   }
-  & * {
+  * {
     box-sizing: border-box;
     transition: 1s;
   }
-  & br {
+  br {
     display: none !important;
   }
-  & .flex {
+  .flex {
     justify-content: center;
     align-items: center;
   }
-  & > div {
+  > div {
     width: 100%;
     height: 100%;
     border: var(--tborder);
     position: relative;
     overflow: hidden;
-    & .sashasigimg {
+    .sashasigimg {
       width: 100%;
       height: 100%;
       position: relative;
       z-index: 1;
       overflow: hidden;
       filter: none;
-      & > img {
+      > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -70,7 +70,7 @@
         mix-blend-mode: color;
       }
     }
-    & .sashasigtxt {
+    .sashasigtxt {
       position: absolute;
       padding: 40px;
       text-align: justify;
@@ -81,7 +81,7 @@
       align-items: center;
       z-index: 1;
       opacity: 0;
-      & > i {
+      > i {
         font: 800 2.5rem "sasha";
         line-height: normal;
         line-height: 100%;
@@ -92,7 +92,7 @@
           margin-bottom: 5px;
         }
       }
-      & > b {
+      > b {
         position: absolute;
         font: 800 270px "sasha swash2";
         z-index: -1;
@@ -103,36 +103,36 @@
         margin-bottom: 17px;
         opacity: 0.5;
       }
-      & > div {
+      > div {
         text-transform: lowercase;
         font: normal 0.9rem "Crimson Text";
         line-height: 120%;
         color: var(--txt3);
-        & i {
+        i {
           font-weight: 500;
           letter-spacing: 0.5px;
           color: var(--txt1);
         }
-        & strong {
+        strong {
           color: var(--group);
           font-weight: 800;
         }
-        & u, & strike {
+        u, strike {
           text-decoration-thickness: 1px;
         }
-        & u {
+        u {
           font-weight: 700;
           color: var(--txt2);
         }
-        & strike {
+        strike {
           color: var(--txt4);
         }
       }
     }
   }
   &:hover {
-    & .sashasigimg {
-      & > img {
+    .sashasigimg {
+      > img {
         filter: contrast(.80) blur(1px) brightness(0.8);
         transform: scale(1.5) rotate(7deg);
       }
@@ -141,7 +141,7 @@
         opacity: 1;
       }
     }
-    & .sashasigtxt {
+    .sashasigtxt {
       opacity: 1;
     }
   }

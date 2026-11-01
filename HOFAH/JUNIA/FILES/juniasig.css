@@ -1,0 +1,178 @@
+.junia {
+  --font1: "Rokkitt", serif;
+  --font2: "Fraunces", serif;
+  --font3: "Barlow", sans-serif;
+}
+
+#juniasig {
+  --borderpadd: 12px;
+  --borderthickness: 1px;
+  width: calc(290px + var(--borderpadd));
+  height: calc(180px + var(--borderpadd));
+  box-sizing: border-box !important;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  * {
+    box-sizing: border-box !important;
+    transition: 1s;
+  }
+  br {
+    display: none !important;
+  }
+  .flex {
+    justify-content: center;
+    align-items: center;
+  }
+  .junsig-border {
+    background: #181818;
+    clip-path: polygon(
+      0% 0%,
+      0% 100%,
+      var(--borderthickness) calc(100% - var(--borderthickness)),
+      var(--borderthickness) var(--borderthickness),
+      calc(100% - var(--borderthickness)) var(--borderthickness),
+      calc(100% - var(--borderthickness)) calc(100% - var(--borderthickness)),
+      var(--borderthickness) calc(100% - var(--borderthickness)),
+      0 100%,
+      100% 100%,
+      100% 0%
+    );
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    &:before,
+    &:after {
+      content: "";
+      width: 100%;
+      height: 13px;
+      background-color: var(--group);
+      position: absolute;
+      transition: 1s;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .junsig-bg {
+    background-image: url(https://hofarpg.github.io/hofa-graficos/maple/junia/firma.png);
+  }
+  .junsig-hover {
+    background-image: url(https://hofarpg.github.io/hofa-graficos/maple/junia/firma-hover.png);
+    opacity: 0;
+    &:before {
+      content: "";
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url(https://hofarpg.github.io/hofa-graficos/maple/junia/firma-overlay.gif);
+      background-size: cover;
+      background-position: center;
+      mix-blend-mode: screen;
+      opacity: 0.2;
+    }
+  }
+  :is(.junsig-bg, .junsig-hover) {
+    width: calc(100% - var(--borderpadd));
+    height: calc(100% - var(--borderpadd));
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 0;
+    transition-delay: 0s;
+    overflow: hidden;
+  }
+  .junsig-txt {
+    width: calc(100% + var(--borderpadd));
+    height: calc(100% + var(--borderpadd));
+    position: relative;
+    padding: calc(var(--borderpadd) * 2.5);
+    z-index: 1;
+    align-items: end;
+    justify-content: start;
+    text-align: left;
+    :is(.junsig-txt1, .junsig-txt2) {
+      position: absolute;
+      align-items: start;
+      justify-content: end;
+      transition-delay: 0s;
+      gap: 0.1rem;
+      > span {
+        text-transform: uppercase;
+        font: 400 0.82rem var(--font1);
+        line-height: 85%;
+        color: var(--txt1);
+        margin-left: 0.3rem;
+        mix-blend-mode: difference;
+      }
+      > strong {
+        text-transform: uppercase;
+        font: 800 1.2rem var(--font2);
+        line-height: 90%;
+        color: var(--group);
+        position: relative;
+        padding: 0.3rem 0.4rem;
+        background: #181818;
+        overflow: hidden;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          z-index: 1;
+          width: 100%;
+          height: 0%;
+          background: var(--group);
+          mix-blend-mode: difference;
+          transition: 1s;
+          transition-delay: 1s;
+        }
+      }
+    }
+    .junsig-txt1 {
+      opacity: 1;
+    }
+    .junsig-txt2 {
+      opacity: 0;
+    }
+  }
+  &:hover {
+    .junsig-border {
+      &:before,
+      &:after {
+        height: 100%;
+      }
+    }
+    .junsig-hover {
+      opacity: 1;
+      transition-delay: 1s;
+    }
+    .junsig-txt {
+      :is(.junsig-txt1, .junsig-txt2) {
+        transition-delay: 1s;
+        > strong {
+          &:before {
+            transition-delay: 2s;
+            height: 100%;
+          }
+        }
+      }
+      .junsig-txt1 {
+        opacity: 0;
+      }
+      .junsig-txt2 {
+        opacity: 1;
+      }
+    }
+  }
+}
