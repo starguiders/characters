@@ -33,8 +33,9 @@
       0% 100%,
       var(--borderthickness) calc(100% - var(--borderthickness)),
       var(--borderthickness) var(--borderthickness),
-      calc(100% - var(--borderthickness)) var(--borderthickness),
-      calc(100% - var(--borderthickness)) calc(100% - var(--borderthickness)),
+      calc(100% - (var(--borderthickness) + 0.5px)) var(--borderthickness),
+      calc(100% - (var(--borderthickness) + 0.5px))
+        calc(100% - (var(--borderthickness) + 0.5px)),
       var(--borderthickness) calc(100% - var(--borderthickness)),
       0 100%,
       100% 100%,
@@ -106,22 +107,23 @@
       align-items: start;
       justify-content: end;
       transition-delay: 0s;
-      gap: 0.1rem;
+      gap: calc(var(--gap0) / 2);
       > span {
         text-transform: uppercase;
-        font: 400 0.82rem var(--font1);
-        line-height: 85%;
+        font: 500 0.85rem var(--font1);
+        line-height: 100%;
         color: var(--txt1);
         margin-left: 0.3rem;
         mix-blend-mode: difference;
+        display: block;
       }
       > strong {
         text-transform: uppercase;
-        font: 800 1.2rem var(--font2);
-        line-height: 90%;
+        font: 800 1.35rem var(--font2);
+        line-height: 100%;
         color: var(--group);
         position: relative;
-        padding: 0.3rem 0.4rem;
+        padding: 0.25rem 0.45rem 0.3rem 0.45rem;
         background: #181818;
         overflow: hidden;
         &:before {
