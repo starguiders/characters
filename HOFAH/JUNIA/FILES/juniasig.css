@@ -6,7 +6,7 @@
 
 #juniasig {
   --borderpadd: 12px;
-  --borderthickness: 1px;
+  --borderthickness: 4px;
   width: calc(290px + var(--borderpadd));
   height: calc(180px + var(--borderpadd));
   box-sizing: border-box !important;
@@ -15,6 +15,14 @@
   margin: 0 auto;
   justify-content: center;
   align-items: center;
+  &:before {
+    content: "";
+    background: var(--back1);
+    position: absolute;
+    z-index: 0;
+    width: calc(100% - 1.5px);
+    height: calc(100% - 1.5px);
+  }
   * {
     box-sizing: border-box !important;
     transition: 1s;
@@ -33,9 +41,8 @@
       0% 100%,
       var(--borderthickness) calc(100% - var(--borderthickness)),
       var(--borderthickness) var(--borderthickness),
-      calc(100% - (var(--borderthickness) + 0.5px)) var(--borderthickness),
-      calc(100% - (var(--borderthickness) + 0.5px))
-        calc(100% - (var(--borderthickness) + 0.5px)),
+      calc(100% - var(--borderthickness)) var(--borderthickness),
+      calc(100% - var(--borderthickness)) calc(100% - var(--borderthickness)),
       var(--borderthickness) calc(100% - var(--borderthickness)),
       0 100%,
       100% 100%,
