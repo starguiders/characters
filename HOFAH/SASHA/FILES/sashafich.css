@@ -1,4 +1,4 @@
-.sasha {
+#expedtab.sasha {
   .bigcover {
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@
         transform: rotate(-45deg);
       }
       > span {
-        font: 400 3rem "sasha";
+        font: 400 3rem var(--font1);
         line-height: 60%;
         text-transform: lowercase;
         letter-spacing: var(--gap0);
@@ -134,7 +134,7 @@
       .normaltext {
         gap: var(--gap2);
         strong {
-          font: 800 var(--fs-title) "sasha swash2";
+          font: 800 var(--fs-title) var(--font3);
           line-height: 70%;
           color: transparent !important;
           text-shadow: 0.15rem 0.15rem 0px #2b2b2b;
@@ -168,7 +168,7 @@
   }
   .expzone:not([data-tab="rpg"]) {
     h2.post-content {
-      font: 800 var(--fo-h1-clamp) "sasha" !important;
+      font: 800 var(--fo-h1-clamp) var(--font1) !important;
       line-height: normal;
       color: transparent !important;
       text-shadow: 0.15rem 0.15rem 0px #2b2b2b;
@@ -178,7 +178,7 @@
       border: none !important;
     }
     h3.post-content {
-      font: 600 var(--fo-h3-clamp) "sasha" !important;
+      font: 600 var(--fo-h3-clamp) var(--font1) !important;
       line-height: normal;
       line-height: normal;
       color: var(--txt1) !important;
@@ -252,7 +252,7 @@
       }
       b {
         text-transform: lowercase !important;
-        font: 800 var(--fs-h4) "sasha" !important;
+        font: 800 var(--fs-h4) var(--font1) !important;
         line-height: normal;
         line-height: normal;
         color: var(--txt2) !important;
@@ -400,7 +400,7 @@
       position: relative;
       &:first-letter {
         text-transform: uppercase;
-        font: 800 var(--fs-h3) "sasha";
+        font: 800 var(--fs-h3) var(--font1);
         float: left;
         line-height: 90%;
         color: rgb(from var(--group) r g b / 0.7);
@@ -430,7 +430,7 @@
         font-size: 1.2rem;
         font-style: normal;
         &.letter {
-          font-family: "sasha";
+          font-family: var(--font1);
           font-weight: 800;
           font-size: 1.3rem;
           text-transform: uppercase;
@@ -449,7 +449,7 @@
   .fcdivider {
     letter-spacing: var(--gap0);
     color: var(--group);
-    font: 800 var(--fs-h4) "sasha" !important;
+    font: 800 var(--fs-h4) var(--font1) !important;
     line-height: 100% !important;
     margin: -2px auto 0;
     width: fit-content;
@@ -511,7 +511,7 @@
       opacity: 0.3;
     }
     b {
-      font: 800 45px "sasha";
+      font: 800 45px var(--font1);
       line-height: normal;
       line-height: 80%;
       color: transparent !important;
@@ -519,14 +519,14 @@
       -webkit-text-stroke: 1px rgb(from var(--group) r g b / 0.7);
     }
     em {
-      font: 800 var(--fs-h4) "sasha";
+      font: 800 var(--fs-h4) var(--font1);
       text-transform: lowercase;
       letter-spacing: var(--gap0);
       color: rgb(from var(--group) r g b / 0.7);
       line-height: 100%;
     }
     i {
-      font: 400 1rem "sasha";
+      font: 400 1rem var(--font1);
       text-transform: lowercase;
       letter-spacing: var(--gap0);
       color: var(--subtitle);
@@ -659,7 +659,7 @@
       color: var(--subtitle);
       &:before {
         content: "• ";
-        font: 800 0.9rem "sasha";
+        font: 800 0.9rem var(--font1);
         color: var(--group);
       }
     }

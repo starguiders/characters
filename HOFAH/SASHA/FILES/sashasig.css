@@ -1,3 +1,9 @@
+.sasha {
+  --font1: "sasha";
+  --font2: "sasha swash1";
+  --font3: "sasha swash2";
+}
+
 #sashasig {
   width: 320px;
   height: calc(180px - 8px);
