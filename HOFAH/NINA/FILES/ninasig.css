@@ -1,8 +1,8 @@
 .nina {
-  --font1: "Tourney", sans-serif;
-  --font2: "JetBrains Mono", sans-serif;
-  --font3: "Sofia Sans Condensed", sans-serif;
-  --font4: "Sofia Sans", sans-serif;
+  --fo1: "Tourney", sans-serif;
+  --fo2: "JetBrains Mono", sans-serif;
+  --fo3: "Sofia Sans Condensed", sans-serif;
+  --fo4: "Sofia Sans", sans-serif;
 }
 
 .ninasig {
@@ -37,7 +37,7 @@
   .ninasquo {
     writing-mode: vertical-rl;
     text-orientation: mixed;
-    font: 700 9px var(--font2);
+    font: 700 9px var(--fo2);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     height: calc(100%);
@@ -77,7 +77,7 @@
     text-align: justify;
     text-align-last: justify;
     width: 105px;
-    font: 500 10px var(--font3);
+    font: 500 10px var(--fo3);
     letter-spacing: 1.5px;
     padding: 10px;
     border-right: 1px solid #ffffff26;
@@ -101,7 +101,7 @@
       text-decoration-thickness: 1px;
     }
     > u {
-      font-family: var(--font2);
+      font-family: var(--fo2);
       font-size: 9px;
       font-weight: 700;
       color: var(--txt1);

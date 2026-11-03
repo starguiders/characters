@@ -1,6 +1,6 @@
 .filenina {
   .expzone:not([data-tab="rpg"]) {
-    font-family: var(--font4);
+    font-family: var(--fo4);
     font-weight: 300;
     .exphicons {
       display: flex;
@@ -57,7 +57,7 @@
       }
       > u {
         text-transform: uppercase;
-        font-family: var(--font2);
+        font-family: var(--fo2);
         font-size: var(--fs-small);
         font-weight: 800;
         color: var(--txt1);
@@ -66,14 +66,14 @@
       }
       strike {
         text-transform: uppercase;
-        font: 600 var(--fs-text) var(--font3);
+        font: 600 var(--fs-text) var(--fo3);
         font-style: italic;
         letter-spacing: 1.5px;
         color: #999;
       }
-      .col3 > em {
+      &.col3 > em {
         color: var(--group);
-        font: 800 var(--fs-bigger) var(--font2);
+        font: 800 var(--fs-bigger) var(--fo2);
         height: calc(var(--fs-h5) * 1.6);
         float: left;
         padding-right: var(--fs-smaller);
@@ -87,7 +87,7 @@
     }
     .exptitle {
       > b {
-        font: 600 var(--fs-h2) var(--font1) !important;
+        font: 600 var(--fs-h2) var(--fo1) !important;
         text-transform: lowercase !important;
       }
       > i {
@@ -102,7 +102,7 @@
         border-radius: 100%;
       }
       > em {
-        font: 500 var(--fs-small) var(--font3) !important;
+        font: 500 var(--fs-small) var(--fo3) !important;
         letter-spacing: 1px;
         text-transform: uppercase !important;
         color: #848484 !important;
@@ -123,7 +123,7 @@
         }
         u {
           text-decoration: none;
-          font: 700 var(--fs-smaller) var(--font2);
+          font: 700 var(--fs-smaller) var(--fo2);
           letter-spacing: 0px;
           color: var(--txt3);
         }
@@ -160,7 +160,7 @@
         content: "\f6cb";
         color: var(--group);
         opacity: 0.7;
-        font: 300 var(--fs-h3) var(--font4);
+        font: 300 var(--fs-h3) var(--fo4);
         float: left;
         height: calc(var(--fs-text) * 2.7);
         display: flex;
@@ -179,7 +179,7 @@
       }
       > u {
         text-transform: uppercase;
-        font-family: var(--font2);
+        font-family: var(--fo2);
         font-size: var(--fs-small);
         font-weight: 800;
         color: var(--txt1);
@@ -188,7 +188,7 @@
       }
       strike {
         text-transform: uppercase;
-        font: 600 var(--fs-text) var(--font3);
+        font: 600 var(--fs-text) var(--fo3);
         font-style: italic;
         letter-spacing: 1.5px;
         color: #999;
