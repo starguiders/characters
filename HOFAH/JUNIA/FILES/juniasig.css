@@ -1,7 +1,7 @@
 .junia {
-  --font1: "Rokkitt", serif;
-  --font2: "Fraunces", serif;
-  --font3: "Barlow", sans-serif;
+  --fo1: "Rokkitt", serif;
+  --fo2: "Fraunces", serif;
+  --fo3: "Barlow", sans-serif;
 }
 
 #juniasig {
@@ -117,7 +117,7 @@
       gap: calc(var(--gap0) / 2);
       > span {
         text-transform: uppercase;
-        font: 500 0.85rem var(--font1);
+        font: 500 0.85rem var(--fo1);
         line-height: 100%;
         color: var(--txt1);
         margin-left: 0.3rem;
@@ -126,7 +126,7 @@
       }
       > strong {
         text-transform: uppercase;
-        font: 800 1.35rem var(--font2);
+        font: 800 1.35rem var(--fo2);
         line-height: 100%;
         color: var(--group);
         position: relative;

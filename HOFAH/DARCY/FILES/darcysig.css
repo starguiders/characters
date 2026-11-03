@@ -1,3 +1,7 @@
+.darcy {
+  --fo3: var(--fo3);
+}
+
 #darcysig {
   width: 280px;
   height: 170px;
@@ -69,7 +73,7 @@
       z-index: 1;
       text-transform: uppercase;
       font:
-        italic 900 19px "Be Vietnam Pro",
+        italic 900 19px var(--fo3),
         sans-serif;
       letter-spacing: -1.5px;
       word-spacing: 3px;
