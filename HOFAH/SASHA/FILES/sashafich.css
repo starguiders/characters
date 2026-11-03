@@ -91,7 +91,7 @@
       align-items: center;
       gap: var(--gap1);
       > b {
-        font: 400 0.9rem "Crimson Text";
+        font: 400 0.9rem var(--font5);
         text-transform: lowercase;
         letter-spacing: var(--gap0);
         color: var(--txt3);
@@ -145,7 +145,7 @@
         }
         i {
           text-transform: uppercase;
-          font: 800 var(--fs-smallest) "Crimson Text";
+          font: 800 var(--fs-smallest) var(--font5);
           position: relative;
           border: 1px solid #ffffff12;
           line-height: 100%;
@@ -197,7 +197,7 @@
     }
     h4.post-content {
       text-transform: uppercase;
-      font: 800 var(--fs-small) "Crimson Text" !important;
+      font: 800 var(--fs-small) var(--font5) !important;
       line-height: 100% !important;
       color: var(--txt2);
       text-decoration: none;
@@ -270,7 +270,7 @@
       }
       i {
         text-transform: uppercase;
-        font: 600 var(--fs-smaller) "Crimson Text" !important;
+        font: 600 var(--fs-smaller) var(--font5) !important;
         line-height: 100% !important;
         color: rgb(from var(--txt4) r g b / 0.7);
       }
@@ -298,7 +298,7 @@
       background: transparent !important;
       width: fit-content;
       text-transform: uppercase;
-      font: 800 0.9rem "Crimson Text";
+      font: 800 0.9rem var(--font5);
       position: relative;
       border: var(--tborder);
       line-height: 100%;
@@ -307,7 +307,7 @@
       color: var(--txt1);
     }
     .fcbheader.tw {
-      font-family: "Crimson Text";
+      font-family: var(--font5);
       line-height: 120%;
       font-size: 0.9rem;
       background: transparent !important;
@@ -341,7 +341,7 @@
         align-items: center;
         cursor: pointer;
         gap: 0.5rem;
-        font: 800 0.9rem "Crimson Text";
+        font: 800 0.9rem var(--font5);
         line-height: 100%;
         color: var(--txt2);
         em {
@@ -357,7 +357,7 @@
         }
       }
       [data-section="columns"] {
-        font-family: "Work Sans";
+        font-family: var(--font4);
         padding: var(--gap3);
         background: var(--back2);
         border: var(--tborder);
@@ -386,7 +386,7 @@
     column-gap: var(--padd0);
     column-rule: var(--tborder);
     column-width: 13rem;
-    font-family: "Work Sans";
+    font-family: var(--font4);
     color: var(--txt3);
     &.twocol,
     &.col2 {
@@ -437,7 +437,7 @@
           line-height: 100%;
         }
         &.number {
-          font-family: "Crimson Text";
+          font-family: var(--font5);
           font-weight: 800;
           font-size: 1rem;
           line-height: 100%;
@@ -534,7 +534,7 @@
     }
   }
   .footnotes {
-    font-family: "Crimson Text";
+    font-family: var(--font5);
     line-height: 110%;
     font-size: 0.95rem;
     background: transparent !important;
@@ -582,19 +582,19 @@
       }
       > span {
         > strong {
-          font: 800 1.1rem "Crimson Text";
+          font: 800 1.1rem var(--font5);
         }
         > em {
           color: var(--text2);
           text-transform: lowercase;
-          font: 600 0.9rem "Crimson Text";
+          font: 600 0.9rem var(--font5);
         }
       }
     }
     .fcpjbot {
       outline-color: #2b2b2b;
       font-size: 0.9rem;
-      font-family: "Work Sans";
+      font-family: var(--font4);
     }
   }
   .fcquote,
@@ -629,7 +629,7 @@
     }
     i {
       font-weight: 500;
-      font-family: "Crimson Text";
+      font-family: var(--font5);
       font-size: 1rem;
     }
     u,
@@ -639,23 +639,23 @@
     u {
       color: var(--subtitle);
       font-weight: 600;
-      font-family: "Crimson Text";
+      font-family: var(--font5);
       font-size: 1rem;
     }
     strike {
       color: var(--text2);
-      font-family: "Crimson Text";
+      font-family: var(--font5);
       font-size: 1rem;
     }
   }
   .fcrbox {
     font-size: 0.9rem;
-    font-family: "Work Sans";
+    font-family: var(--font4);
     line-height: 125%;
     .podtitl {
       text-align: right;
       text-transform: uppercase;
-      font: 800 0.9rem "Crimson Text";
+      font: 800 0.9rem var(--font5);
       color: var(--subtitle);
       &:before {
         content: "• ";
@@ -668,7 +668,7 @@
     }
     .habtitl {
       text-transform: uppercase;
-      font: 800 0.9rem "Crimson Text";
+      font: 800 0.9rem var(--font5);
       color: var(--group);
       border: var(--tborder);
       width: fit-content;

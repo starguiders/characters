@@ -2,6 +2,8 @@
   --font1: "sasha";
   --font2: "sasha swash1";
   --font3: "sasha swash2";
+  --font4: "Work Sans";
+  --font5: "Crimson Text";
 }
 
 #sashasig {
@@ -88,7 +90,7 @@
       z-index: 1;
       opacity: 0;
       > i {
-        font: 800 2.5rem "sasha";
+        font: 800 2.5rem var(--font1);
         line-height: normal;
         line-height: 100%;
         text-transform: lowercase;
@@ -100,7 +102,7 @@
       }
       > b {
         position: absolute;
-        font: 800 270px "sasha swash2";
+        font: 800 270px var(--font3);
         z-index: -1;
         line-height: 80%;
         color: transparent !important;
@@ -111,7 +113,7 @@
       }
       > div {
         text-transform: lowercase;
-        font: normal 0.9rem "Crimson Text";
+        font: normal 0.9rem var(--font5);
         line-height: 120%;
         color: var(--txt3);
         i {
