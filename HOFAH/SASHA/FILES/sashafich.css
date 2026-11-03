@@ -166,96 +166,26 @@
       }
     }
   }
-  h2.post-content {
-    font: 800 var(--fo-h1-clamp) "sasha" !important;
-    line-height: normal;
-    color: transparent !important;
-    text-shadow: 0.15rem 0.15rem 0px #2b2b2b;
-    -webkit-text-stroke: 1px var(--group);
-    text-transform: initial;
-    line-height: 90% !important;
-    border: none !important;
-  }
-  h3.post-content {
-    font: 600 var(--fo-h3-clamp) "sasha" !important;
-    line-height: normal;
-    line-height: normal;
-    color: var(--txt1) !important;
-    text-transform: lowercase !important;
-    line-height: 100% !important;
-    border: none !important;
-    text-align: center;
-    &:after {
-      content: "• • • •";
-      display: block;
-      letter-spacing: var(--gap0);
-      color: var(--group);
-      font-size: var(--fs-h4) !important;
-      line-height: 100% !important;
+  .expzone:not([data-tab="rpg"]) {
+    h2.post-content {
+      font: 800 var(--fo-h1-clamp) "sasha" !important;
+      line-height: normal;
+      color: transparent !important;
+      text-shadow: 0.15rem 0.15rem 0px #2b2b2b;
+      -webkit-text-stroke: 1px var(--group);
+      text-transform: initial;
+      line-height: 90% !important;
+      border: none !important;
     }
-  }
-  h4.post-content {
-    text-transform: uppercase;
-    font: 800 var(--fs-small) "Crimson Text" !important;
-    line-height: 100% !important;
-    color: var(--txt2);
-    text-decoration: none;
-    border: none !important;
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    em {
-      color: rgb(from var(--group) r g b / 0.7);
-      font-size: 1.3rem;
-      border: var(--tborder);
-      width: calc(var(--icon0) / 1.4);
-      height: calc(var(--icon0) / 1.4);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform: rotate(45deg);
-      margin-bottom: var(--padd1);
-      &:before {
-        transform: rotate(-45deg);
-      }
-    }
-  }
-  .fcdecof,
-  .fcdecof2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40% !important;
-    min-width: 260px;
-    text-align: justify;
-    margin: 0 auto;
-    em {
-      color: rgb(from var(--group) r g b / 0.7);
-      font-size: 1.2rem;
-      border: var(--tborder);
-      width: 40px;
-      height: 40px;
-      display: flex;
-      flex-shrink: 0;
-      justify-content: center;
-      align-items: center;
-      align-items: center;
-      transform: rotate(45deg);
-      margin: 0 auto;
-      &:before {
-        transform: rotate(-45deg);
-      }
-    }
-    b {
+    h3.post-content {
+      font: 600 var(--fo-h3-clamp) "sasha" !important;
+      line-height: normal;
+      line-height: normal;
+      color: var(--txt1) !important;
       text-transform: lowercase !important;
-      font: 800 var(--fs-h4) "sasha" !important;
-      line-height: normal;
-      line-height: normal;
-      color: var(--txt2) !important;
       line-height: 100% !important;
+      border: none !important;
+      text-align: center;
       &:after {
         content: "• • • •";
         display: block;
@@ -263,37 +193,107 @@
         color: var(--group);
         font-size: var(--fs-h4) !important;
         line-height: 100% !important;
-        margin-top: calc(var(--gap0) * -0.5);
-        margin-bottom: var(--gap0);
       }
     }
-    i {
+    h4.post-content {
       text-transform: uppercase;
-      font: 600 var(--fs-smaller) "Crimson Text" !important;
+      font: 800 var(--fs-small) "Crimson Text" !important;
       line-height: 100% !important;
-      color: rgb(from var(--txt4) r g b / 0.7);
-    }
-  }
-  .fcdecof {
-    text-align-last: center;
-    margin-inline: auto;
-    flex-direction: column;
-    em {
-      margin-bottom: var(--padd1);
-    }
-  }
-  .fcdecof2 {
-    text-align-last: left;
-    gap: calc(var(--gap0) / 2);
-    u {
-      margin-left: var(--padd1) !important;
+      color: var(--txt2);
       text-decoration: none;
+      border: none !important;
+      text-align: center;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      em {
+        color: rgb(from var(--group) r g b / 0.7);
+        font-size: 1.3rem;
+        border: var(--tborder);
+        width: calc(var(--icon0) / 1.4);
+        height: calc(var(--icon0) / 1.4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(45deg);
+        margin-bottom: var(--padd1);
+        &:before {
+          transform: rotate(-45deg);
+        }
+      }
     }
-    i {
-      text-align-last: left !important;
+    .fcdecof,
+    .fcdecof2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40% !important;
+      min-width: 260px;
+      text-align: justify;
+      margin: 0 auto;
+      em {
+        color: rgb(from var(--group) r g b / 0.7);
+        font-size: 1.2rem;
+        border: var(--tborder);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        transform: rotate(45deg);
+        margin: 0 auto;
+        &:before {
+          transform: rotate(-45deg);
+        }
+      }
+      b {
+        text-transform: lowercase !important;
+        font: 800 var(--fs-h4) "sasha" !important;
+        line-height: normal;
+        line-height: normal;
+        color: var(--txt2) !important;
+        line-height: 100% !important;
+        &:after {
+          content: "• • • •";
+          display: block;
+          letter-spacing: var(--gap0);
+          color: var(--group);
+          font-size: var(--fs-h4) !important;
+          line-height: 100% !important;
+          margin-top: calc(var(--gap0) * -0.5);
+          margin-bottom: var(--gap0);
+        }
+      }
+      i {
+        text-transform: uppercase;
+        font: 600 var(--fs-smaller) "Crimson Text" !important;
+        line-height: 100% !important;
+        color: rgb(from var(--txt4) r g b / 0.7);
+      }
     }
-  }
-  .expzone {
+    .fcdecof {
+      text-align-last: center;
+      margin-inline: auto;
+      flex-direction: column;
+      em {
+        margin-bottom: var(--padd1);
+      }
+    }
+    .fcdecof2 {
+      text-align-last: left;
+      gap: calc(var(--gap0) / 2);
+      u {
+        margin-left: var(--padd1) !important;
+        text-decoration: none;
+      }
+      i {
+        text-align-last: left !important;
+      }
+    }
     .fcbheader:not(.tw) {
       background: transparent !important;
       width: fit-content;
