@@ -1,8 +1,12 @@
+/* GENERAL */
+
 .darcy {
   --fo1: "Technor", sans-serif;
   --fo2: "Public Sans", sans-serif;
   --fo3: "Be Vietnam Pro", sans-serif;
 }
+
+/* FIRMA */
 
 #darcysig {
   width: 280px;
@@ -74,9 +78,7 @@
       position: absolute;
       z-index: 1;
       text-transform: uppercase;
-      font:
-        italic 900 19px var(--fo3),
-        sans-serif;
+      font: italic 900 19px var(--fo3);
       letter-spacing: -1.5px;
       word-spacing: 3px;
       color: var(--txt1);
@@ -112,6 +114,9 @@
     }
   }
 }
+
+/* KEYFRAMES */
+
 @keyframes pulse-ring {
   0% {
     transform: scale(0.5);

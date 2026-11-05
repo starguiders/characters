@@ -1,0 +1,177 @@
+/* GENERAL */
+
+.dahlia {
+  --fo1: "Piazzolla", serif;
+  --fo2: "Kanit", sans-serif;
+  --fo3: "Work Sans", sans-serif;
+}
+
+/* FIRMA */
+
+#dahliasig {
+  width: 280px;
+  height: 170px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box !important;
+  border: var(--tborder);
+  border-left: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  * {
+    box-sizing: border-box !important;
+    transition: 1s;
+  }
+  br {
+    display: none;
+  }
+  .flex {
+    justify-content: center;
+    align-items: center;
+  }
+  .dahsig-bg {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      height: 100%;
+      width: 35px;
+      top: 0;
+      transition: 1s;
+      backdrop-filter: grayscale(1);
+    }
+    &:before {
+      left: 0;
+      border-right: var(--tborder);
+    }
+    &:after {
+      right: 0;
+      border-left: var(--tborder);
+    }
+    > div {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--tback1);
+      background-image: var(--img-group);
+      background-size: cover;
+      background-position: center;
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        background: var(--accent);
+        opacity: 1;
+        mix-blend-mode: multiply;
+        backdrop-filter: var(--filter2);
+      }
+    }
+  }
+  .dahsig-txt1 {
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - (35px * 2));
+    height: 100%;
+    opacity: 1;
+    gap: 0.6rem;
+    > span {
+      text-transform: uppercase;
+      font: italic 200 0.6rem var(--fo1);
+      line-height: 100%;
+      color: var(--txt4);
+      letter-spacing: 0.5px;
+      strong {
+        font-style: normal;
+        font-weight: 900;
+        color: var(--accent);
+      }
+      i {
+        font-weight: 500;
+        color: var(--txt2);
+      }
+    }
+    > img {
+      width: 147px;
+      height: 81px;
+    }
+  }
+  .dahsig-txt2 {
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - (35px * 2));
+    height: 100%;
+    opacity: 0;
+    padding: var(--padd4);
+    text-align: justify;
+    text-align-last: center;
+    backdrop-filter: grayscale(1);
+    > i {
+      font-size: 110px;
+      color: var(--accent);
+      opacity: 0.3;
+      position: absolute;
+      z-index: 0;
+    }
+    > span {
+      position: relative;
+      z-index: 1;
+      text-transform: lowercase;
+      font: 200 0.7rem var(--fo1);
+      line-height: 130%;
+      color: var(--txt4);
+      letter-spacing: 0.5px;
+      strong {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: var(--accent);
+      }
+      i {
+        letter-spacing: 0.5px;
+        font-weight: 400;
+        color: var(--txt2);
+      }
+      u,
+      strike {
+        text-decoration-thickness: 1px;
+      }
+      u {
+        color: var(--txt3);
+        text-underline-offset: 1.5px;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+      }
+      strike {
+        color: hsl(from var(--txt4) h s 40%);
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+    }
+  }
+  &:hover {
+    .dahsig-bg {
+      &:before,
+      &:after {
+        backdrop-filter: none;
+        width: 244.5px;
+      }
+    }
+    .dahsig-txt1 {
+      opacity: 0;
+    }
+    .dahsig-txt2 {
+      opacity: 1;
+    }
+  }
+}

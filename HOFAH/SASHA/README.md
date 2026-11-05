@@ -1,4 +1,4 @@
 ## ENLACES.
 
 - **TABLILLAS:** `<link href="https://starguiders.github.io/characters/HOFAH/SASHA/FILES/nombrearchivo.css" rel="stylesheet"/>`
-- **FONTS:** `<link href="https://starguiders.github.io/characters/HOFAH/SASHA/FILES/sashafonts.css" rel="stylesheet"/>`
+- **TIPOGRAFÍAS:** `<link href="https://starguiders.github.io/characters/HOFAH/SASHA/FILES/sasha.css" rel="stylesheet"/>`

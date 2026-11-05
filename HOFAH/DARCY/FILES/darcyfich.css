@@ -1,3 +1,5 @@
+/* EXPEDIENTE */
+
 #expedtab.darcy {
   .expzone:not([data-tab="rpg"]) {
     font-family: var(--fo2);
@@ -32,7 +34,7 @@
     > strong {
       text-transform: uppercase;
       line-height: 90% !important;
-      font: 900 80px;
+      font: 900 80px var(--fo1);
       color: transparent !important;
       text-shadow: 3px 3px 0px var(--tgroup);
       -webkit-text-stroke: 0.7px var(--txt1);
@@ -183,12 +185,14 @@
   }
 }
 
+
+/* MEDIA */
+
 @media (max-width: 900px) {
   .expbigtitle > strong {
     font-size: 50px;
   }
 }
-
 @media (max-width: 500px) {
   .expbigtitle > i {
     font-size: 250px;
