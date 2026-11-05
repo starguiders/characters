@@ -1,0 +1,196 @@
+#expedtab.darcy {
+  .expzone:not([data-tab="rpg"]) {
+    font-family: var(--fo2);
+    font-weight: 300;
+    font-size: 12.5px;
+    line-height: 145% !important;
+  }
+  .expbigtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    gap: 14px;
+    br {
+      display: none !important;
+    }
+    * {
+      position: relative;
+      z-index: 1;
+    }
+    > i {
+      position: absolute;
+      z-index: 0;
+      font-size: 300px;
+      color: #fff;
+      opacity: 0.07;
+    }
+    > strong {
+      text-transform: uppercase;
+      line-height: 90% !important;
+      font: 900 80px;
+      color: transparent !important;
+      text-shadow: 3px 3px 0px var(--tgroup);
+      -webkit-text-stroke: 0.7px var(--txt1);
+    }
+    > em {
+      text-transform: uppercase;
+      font: normal 500 9.5px var(--fo1);
+      letter-spacing: 3px;
+      color: var(--txt4);
+      text-decoration: underline dotted var(--tgroup) 1px;
+      text-underline-offset: 4px;
+      line-height: 200% !important;
+      b {
+        color: var(--txt2);
+        font-weight: 900;
+      }
+    }
+  }
+  .exptitle {
+    &:empty {
+      height: 50px;
+      width: 50px !important;
+      &:before,
+      &:after {
+        content: "";
+        height: 50px;
+        width: 1px;
+        background: var(--group);
+        position: absolute;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+    :has(strong, em) {
+      width: fit-content !important;
+      border-top: var(--border2);
+      border-bottom: var(--border2);
+      padding: 15px 20px;
+    }
+    :has(b) {
+      width: fit-content !important;
+      background: #101010;
+      padding: 12px 14px;
+      border-right: 1px dotted var(--group);
+      border-left: 1px dotted var(--group);
+      color: var(--group);
+    }
+    strong {
+      text-transform: lowercase !important;
+      font: italic 900 27px var(--fo3);
+      letter-spacing: -2.9px;
+      word-spacing: 3px;
+      line-height: 90% !important;
+    }
+    em {
+      text-transform: uppercase !important;
+      font: normal 700 9px var(--fo1) !important;
+      letter-spacing: 2px;
+    }
+    b {
+      font: normal 700 10px var(--fo1) !important;
+      line-height: 100% !important;
+      text-decoration: none !important;
+      text-underline-offset: 0px !important;
+      letter-spacing: 0.5px;
+    }
+    > i {
+      color: var(--tgroup) !important;
+    }
+    > b > u {
+      text-decoration: none !important;
+      color: var(--group);
+      font-weight: 900 !important;
+    }
+  }
+  .colu {
+    column-gap: 35px !important;
+    column-rule: var(--border2) !important;
+    hyphens: auto;
+    &.col3 {
+      > em {
+        text-transform: uppercase;
+        font: italic 900 13px var(--fo2);
+        letter-spacing: -1px;
+        float: left;
+        border-top: var(--border2);
+        border-bottom: var(--border2);
+        padding: 5px 9px;
+        margin-top: 3px;
+        margin-right: 8px;
+        color: var(--group);
+        &:nth-of-type(even) {
+          color: var(--tgroup);
+        }
+      }
+    }
+  }
+  .darcyweapbox {
+    width: 100%;
+    padding: 22px 25px;
+    background: #101010;
+    border-left: 1px dotted var(--group);
+    border-right: 1px dotted var(--group);
+    display: inline-block;
+    margin-bottom: 11px;
+    > em {
+      font-size: 53px;
+      float: left;
+      margin-right: 15px;
+      color: var(--group);
+    }
+  }
+  .colu,
+  .darcyweapbox {
+    strong {
+      text-transform: uppercase;
+      color: var(--group);
+      font: normal 800 13px var(--fo1);
+    }
+    i {
+      color: var(--txt4);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      text-transform: lowercase;
+    }
+    u {
+      text-transform: uppercase;
+      font: 700 10px var(--fo1);
+      color: var(--back1);
+      letter-spacing: 1px;
+      text-decoration: none !important;
+      background-color: var(--tgroup);
+      padding: 1px 3px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+    }
+    strike {
+      text-transform: uppercase;
+      font: italic 900 11px var(--fo2);
+      letter-spacing: -1px;
+      text-decoration: line-through solid var(--group) 1px;
+      color: #7a7a7a;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .expbigtitle > strong {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .expbigtitle > i {
+    font-size: 250px;
+  }
+}

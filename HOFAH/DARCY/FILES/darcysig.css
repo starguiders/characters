@@ -1,5 +1,7 @@
 .darcy {
-  --fo3: var(--fo3);
+  --fo1: "Technor", sans-serif;
+  --fo2: "Public Sans", sans-serif;
+  --fo3: "Be Vietnam Pro", sans-serif;
 }
 
 #darcysig {
